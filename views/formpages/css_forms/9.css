@@ -1,0 +1,72 @@
+body { padding-top:30px; }
+    .form-control { margin-bottom: 10px; }
+    .floating-box {
+        display: inline-block;
+        width: 150px;
+        height: 75px;
+        margin: 10px;
+        border: 3px solid #73AD21;  
+    }
+ 
+    body { padding-top:30px; }
+    .form-control { margin-bottom: 10px; }
+    label{
+      padding: 0 !important;
+    }
+    hr{
+      border-top: 1px solid #025198 !important;
+      border-style: dashed!important;
+      border-width: 1.2px;
+    }
+    
+    .panel-heading{
+      font-size: 1.3em;
+      font-family: 'Oswald', sans-serif!important;
+      letter-spacing: .5px;
+    }
+    
+    .panel-info .panel-heading{
+      font-size: 1.1em;
+      font-family: 'Oswald', sans-serif!important;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .panel-danger .panel-heading{
+      font-size: 1.1em;
+      font-family: 'Oswald', sans-serif!important;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .btn-primary {
+      padding: 9px;
+    }
+    
+    .Acae_data
+    {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #414002;
+    }
+    
+    
+    .upload_crerti
+    {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: red;
+      text-align: center;
+    }
+    
+    .update_crerti
+    {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+    p
+    {
+      padding-top: 10px;
+    }

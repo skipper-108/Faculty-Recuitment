@@ -1,0 +1,108 @@
+<% layout("/layout/every.ejs") %>
+
+<link rel="stylesheet" type="text/css" href="https://ofa.iiti.ac.in/facrec_che_2023_july_02/css/pages.css">
+<h3 style="color: #e10425; margin-bottom: 20px; font-weight: bold; text-align: center;font-family: 'Noto Serif', serif;" class="blink_me">Application for Faculty Position</h3>
+<style>
+  .iit-logo {
+        max-width: 25vw;
+        height: auto;
+        padding: 1rem;
+        margin: 0 auto;
+        display: block;
+  }
+  
+  .container1 {
+    width: 94%;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 24px;
+    box-shadow: 0px 1px 30px 1px #284d7a;
+    background-color: #e0ea85;
+    margin-inline: auto;
+  }
+  
+  .login-form {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 1px 30px 1px #284d7a;
+    background-color: #F7FFFF;
+  }
+  
+  .login-form h3 {
+   text-align: center;
+   color: #4b0082;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+   font-family: 'Oswald', sans-serif;
+  }
+  
+  .login-form form {
+   text-align: center;
+  }
+  
+  .login-form input {
+    margin-bottom: 10px;
+  }
+  
+  .login-form button {
+   margin-top: 12px;
+   padding: 8px;
+   background-color: #008b8b;
+   color: #ffffff;
+   border: none;
+   border-radius: 3px;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+   transition: background-color 0.3s ease;
+   font-size: 13px;
+  }
+  
+  .login-form button:hover {
+   background-color: #006666;
+  }
+  
+  .forgot-password {
+   float: right;
+   font-size: 13px;
+   color: #6b8e23;
+   text-decoration: underline;
+  }
+
+  .blink_me {
+  animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  </style>
+<div class="container1">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="https://www.excelbee.com/images/university/indian-institute-of-information-technology-bhagalpur-logo.png" class="iit-logo" />
+    </div>
+    <div class="col-md-6">
+      <div class="login-form">
+        <h3><strong><u>LOGIN HERE</u></strong></h3>
+        <form role="form" method="post">
+          <input type="hidden" name="ci_csrf_token" value="" />
+          <div class="inner-addon left-addon">
+            <i class="glyphicon glyphicon-envelope"></i>
+            <input type="text" name="email" placeholder="Your email" autofocus="" required/>
+          </div>
+          <br />
+          <div class="inner-addon left-addon">
+            <i class="glyphicon glyphicon-lock"></i>
+            <input type="password" placeholder="Enter your password" name="password" required>
+          </div>
+          <br />
+          <button type="submit" name="submit" value="Submit">Login</button>
+          <a href="http://localhost:8000/reset" >Reset Password</a>
+        </form>
+        <br />
+        <p style="text-align: center; color: green; font-size: 1.3em;"><strong>NOT REGISTERED? </strong><a href='http://localhost:8000/signup' class="btn-sm btn-primary">SIGN UP</a></p>
+      </div>
+    </div>
+  </div>
+</div>
