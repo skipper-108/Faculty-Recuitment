@@ -1,0 +1,125 @@
+body {
+    padding-top: 30px;
+    font-family: 'Noto Serif', serif;
+    background-color: #f2f2f2;
+    font-size: 14px;
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    font-size: 13px;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  
+  .floating-box {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px dotted #8b4513;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  label {
+    padding: 0 !important;
+    text-align: left !important;
+    font-family: 'Noto Serif', serif;
+    color: #6b8e23;
+    font-size: 13px;
+  }
+  
+  hr {
+    border-top: 2px solid #ffa07a !important;
+    border-style: double !important;
+    border-width: 2px;
+  }
+  
+  .panel-heading {
+    font-size: 1.2em;
+    font-family: 'Oswald', sans-serif !important;
+    letter-spacing: 0.5px;
+    color: #4b0082;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .panel-info .panel-heading,
+  .panel-danger .panel-heading {
+    font-size: 1.1em;
+    font-family: 'Oswald', sans-serif !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .btn-primary {
+    padding: 9px;
+    background-color: #008b8b;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #006666;
+  }
+  
+  .Acae_data {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #8b0000;
+  }
+  
+  .upload_crerti,
+  .update_crerti {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .upload_crerti {
+    color: red;
+  }
+  
+  .update_crerti {
+    color: green;
+  }
+  
+  p {
+    padding-top: 10px;
+  }
+  
+  .iit-logo {
+    max-width: 20vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .container1 {
+    width: 94%;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 1px 30px 1px #284d7a;
+    background-color: #25a9a9;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
