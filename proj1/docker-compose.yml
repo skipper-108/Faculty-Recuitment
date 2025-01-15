@@ -1,0 +1,42 @@
+
+
+services:
+  mysqldb:
+    image: mysql:latest
+    container_name: mysql-db-container
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: "messi"
+      MYSQL_DATABASE: "DBMS_P"
+    volumes:
+      - mysqldb_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    networks:
+      - internalnetwork
+
+  node-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node-server-container
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysqldb
+    environment:
+      DB_HOST: "mysqldb"
+      DB_PORT: 3306
+      DB_USER: "root"
+      DB_PASSWORD: "messi"
+      DB_NAME: "DBMS_P"
+    networks:
+      - internalnetwork
+
+networks:
+  internalnetwork:
+    driver: bridge
+
+volumes:
+  mysqldb_data:
